@@ -386,7 +386,6 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 6px;
-  border: none;
   height: 40px;
 }
 
@@ -396,6 +395,7 @@ body {
   padding-left: 23px;
   padding-right: 75px;
   background-color: #F5FAFE;
+  border: none;
   font-size: 12px;
   color: #333333;
 }
@@ -407,6 +407,7 @@ body {
   width: 65px;
   height: 100%;
   background-color: #EC1F46;
+  border: none;
 }
 
 .user {
