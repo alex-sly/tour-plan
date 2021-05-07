@@ -409,6 +409,7 @@ img {
 
 .navbar-menu__link {
   font-size: 14px;
+  font-weight: 700;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -498,7 +499,7 @@ img {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 760px;
+    max-width: 700px;
   }
   .logo {
     width: 132px;
@@ -520,7 +521,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 90%;
