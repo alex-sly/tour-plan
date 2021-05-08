@@ -574,7 +574,7 @@ img {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  line-height: 0.5;
+  line-height: 12px;
 }
 
 .stars__star {
@@ -685,8 +685,8 @@ img {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    -ms-flex-preferred-size: 62px;
+        flex-basis: 62px;
   }
   .hotel-wrapper {
     -webkit-box-pack: justify;
@@ -719,6 +719,15 @@ img {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-top: 0;
+  }
+  .hotel-description {
+    line-height: 16px;
+  }
+  .offer {
+    margin-left: 2px;
   }
 }
 /*# sourceMappingURL=style.css.map */
