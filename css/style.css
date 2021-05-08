@@ -510,7 +510,7 @@ img {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .breadcrumb-list__link {
@@ -536,7 +536,7 @@ img {
 }
 
 .hotel-info__offer {
-  margin-top: 4px;
+  margin-top: 6px;
   margin-left: 14px;
 }
 
@@ -568,12 +568,17 @@ img {
 
 .hotel-description {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 18px;
 }
 
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  line-height: 0.5;
+}
+
+.stars__star {
+  margin-right: -2px;
 }
 
 .offer {
@@ -593,6 +598,7 @@ img {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  padding-top: 2px;
 }
 
 .rating__text {
