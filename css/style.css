@@ -670,6 +670,13 @@ img {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.slider-photo {
+  width: 728px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
