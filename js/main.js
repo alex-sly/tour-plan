@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".slider-container", {
   // Optional parameters
   loop: true,
   // Navigation arrows
