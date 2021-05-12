@@ -955,7 +955,7 @@ img {
           align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  width: 730px;
+  max-width: 730px;
   padding: 0 62px 30px;
   margin: 45px auto 0;
 }
@@ -1000,12 +1000,12 @@ img {
 }
 
 .reviews-slider__button--prev {
-  left: 18px;
+  left: 0px;
   background-image: url(../img/chevron-prev.svg);
 }
 
 .reviews-slider__button--next {
-  right: 18px;
+  right: 0px;
   background-image: url(../img/chevron-next.svg);
 }
 
@@ -1124,6 +1124,9 @@ img {
     width: 340px;
     max-height: 210px;
   }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1227,6 +1230,21 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    left: 30px;
+  }
+  .reviews-slider__button--next {
+    right: 30px;
   }
 }
 
