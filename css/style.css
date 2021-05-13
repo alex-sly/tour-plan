@@ -595,6 +595,7 @@ img {
 }
 
 .stars {
+  width: 50px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   line-height: 12px;
@@ -836,7 +837,7 @@ img {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 98px 0 88px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -926,12 +927,15 @@ img {
   height: 100%;
   border: none;
   color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
   background-color: #EC1F46;
   cursor: pointer;
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 41px 0 70px 0;
 }
 
 .reviews__title {
@@ -1029,7 +1033,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .reviews-slider__avatar {
@@ -1047,7 +1051,7 @@ img {
   font-weight: bold;
   color: #EC1F46;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .reviews-slider__date {
@@ -1059,10 +1063,13 @@ img {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 140px;
   font-size: 12px;
   line-height: 160%;
   font-weight: normal;
+  vertical-align: top;
   text-align: justify;
+  overflow: auto;
   margin: auto;
 }
 
@@ -1075,6 +1082,7 @@ img {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 57px;
 }
 
@@ -1228,6 +1236,9 @@ img {
   .subscribe__button {
     font-size: 12px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -1246,6 +1257,9 @@ img {
   .reviews-slider__button--next {
     right: 0px;
   }
+  .activities {
+    padding-bottom: 50px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1255,7 +1269,13 @@ img {
   }
   .card {
     width: 340px;
-    min-height: 250px;
+    min-height: 255px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
   }
 }
 
@@ -1296,10 +1316,6 @@ img {
     height: 1px;
     background-color: #333333;
   }
-  .stars {
-    -ms-flex-preferred-size: 62px;
-        flex-basis: 62px;
-  }
   .hotel {
     padding-top: 0;
   }
@@ -1307,6 +1323,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel__stars {
+    -ms-flex-preferred-size: 62px;
+        flex-basis: 62px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -1434,12 +1454,25 @@ img {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
   }
   .reviews-slider__text {
+    max-height: 270px;
     text-align: left;
+  }
+  .activities {
+    padding-top: 44px;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
   }
   .card {
     width: 100%;

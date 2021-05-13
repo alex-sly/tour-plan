@@ -54,6 +54,7 @@
     &__button
       font-size: 12px
   .reviews
+    padding-bottom: 60px
     &__title
       font-size: 30px
       line-height: 38px
@@ -68,13 +69,20 @@
         &--next
           right: 0px
   .activities
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    min-height: 250px
+    min-height: 255px
+@media (max-width: 768px)
+  .reviews
+    &-slider
+      &__item
+        &::before, &::after
+          display: none  
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -101,12 +109,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
-  .stars
-    flex-basis: 62px
   .hotel
     padding-top: 0
     &-wrapper
       justify-content: space-between
+    &__stars
+      flex-basis: 62px
     &-name
       flex-basis: 100%
     &-info
@@ -197,12 +205,21 @@
     &__input
       padding-left: 20px
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
     &-slider
       &__text
+        max-height: 270px
         text-align: left
+  .activities
+    padding-top: 44px
+    padding-bottom: 60px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
   .card
     width: 100%
     max-height: 255px
