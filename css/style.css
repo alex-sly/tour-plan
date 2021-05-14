@@ -897,6 +897,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
+  border: none;
   font-size: 14px;
   font-weight: 300;
   padding-left: 32px;
@@ -1478,6 +1479,19 @@ img {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 36px;
+  }
+  .activities__card:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card:nth-child(4) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .activities__card:nth-child(3) {
+    margin-bottom: 28px;
   }
   .card {
     width: 100%;
