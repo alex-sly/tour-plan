@@ -14,21 +14,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar__mobile-fixed">
+    <header class="navbar navbar-mobile-fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
 
-          <form action="#" class="search navbar__search navbar-search__mobile-hidden">
+          <form action="#" class="search navbar__search navbar__search-mobile-hidden">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar-user__mobile-hidden">
+          <a href="#" class="user navbar__user navbar__user-mobile-hidden">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -45,14 +45,14 @@
       <div class="navbar-button">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu-user__mobile-visible">
-              <a href="#" class="user navbar__user navbar-user__mobile-visible">
+            <li class="navbar-menu__item navbar-menu__item-mobile-visible navbar-menu__user">
+              <a href="#" class="user navbar__user navbar__user-mobile-visible">
                 <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
-                <span class="user__name user-name__light">Nathan</span>
+                <span class="user__name user__name-light">Nathan</span>
               </a>
             </li>
-            <li class="navbar-menu__item navbar-menu-search__mobile-visible">
-              <form action="#" class="search navbar__search navbar-search__mobile-visible">
+            <li class="navbar-menu__item navbar-menu__item-mobile-visible navbar-menu__search">
+              <form action="#" class="search navbar__search navbar__search-mobile-visible">
                 <input type="text" class="search__input" placeholder="Search Location" />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
@@ -477,7 +477,9 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="icon: email" />
                 </div>
-                cherly.lawson@example.com
+                <a class="footer__item-email" href="mailto:cherly.lawson@example.com">
+                  cherly.lawson@example.com
+                </a>
               </li>
             </ul>
           </div>
@@ -494,7 +496,7 @@
           </div>
           <!-- /.footer__contact-form -->
           <div class="footer__disclaimer">
-            <span class="footer_disclaimer-text">
+            <span class="footer__disclaimer-text">
               Disclaimer&nbsp;&nbsp;&nbsp;Conditions of use&nbsp;&nbsp;&nbsp;Cancellation policy
             </span>
             <img src="img/images.png" alt="icons: images" class="footer__disclaimer-images" />
