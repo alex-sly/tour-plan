@@ -21,3 +21,10 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     prevEl: ".reviews-slider__button--prev",
   },
 });
+
+// Мобильное меню
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("CLICK");
+  document.querySelector(".navbar-button").classList.toggle("navbar-button__visible");
+});
