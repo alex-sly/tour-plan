@@ -9,6 +9,20 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+  .offer
+    width: 100%
+    &:nth-child(1)
+      width: 100%
+    &-picture
+      &__image
+        width: 100%
+        &-first
+          width: 100%
+    &-hotel
+      width: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -127,6 +141,10 @@
       justify-content: space-between
       &-images
         margin-left: 0
+  .packages
+    &__header
+      font-size: 30px
+      line-height: 38px
 @media (max-width: 768px)
   .reviews
     &-slider
@@ -179,6 +197,9 @@
         margin-bottom: 29px
       &__search
         margin-bottom: 36px
+      &__scroll
+        max-height: 100vh
+        overflow-y: auto
     &__user
       &-mobile
         &-visible
@@ -312,11 +333,34 @@
         margin-top: 30px
       &--mb2
         margin-top: 20px
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+  .offer
+    &:nth-child(1)
+      grid-column: 1 / 2
+      flex-direction: column
+    &-picture
+      &__image
+        &-first
+          height: 250px
+    &__flash
+      &-first
+        font-size: 8px
+        padding: 4px 10px
+    &-hotel
+      &-first
+        height: 250px
+        padding: 30px 21px 25px 32px
+      &__rating, &__description
+        display: none
 @media (max-width: 576px)
+  .packages
+    &__header
+      font-size: 18px
+      line-height: 23px
   .logo
     width: 99px
-  .offer
-    margin-left: 2px
   .slider
     max-height: 210px
     &-button
@@ -332,6 +376,8 @@
     &__slider
       margin-top: 18px
       margin-bottom: 20px
+    &-offer
+      margin-left: 2px
   .newsletter
     &-title
       font-size: 20px
