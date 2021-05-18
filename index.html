@@ -390,7 +390,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo" />
+          <a href="#" class="footer__logo">
+            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -426,14 +428,14 @@
           <div class="footer__social-network">
             <div class="footer__title footer__title--inline">Social Network</div>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
-                ><img src="img/facebook.svg" alt="icon: facebook" />
+              <a href="https://facebook.com" target="_blank" class="footer__link">
+                <img src="img/facebook.svg" alt="icon: facebook" />
               </a>
-              <a href="#" class="footer__link"
-                ><img src="img/youtube.svg" alt="icon: youtube" />
+              <a href="https://youtube.com" target="_blank" class="footer__link">
+                <img src="img/youtube.svg" alt="icon: youtube" />
               </a>
-              <a href="#" class="footer__link"
-                ><img src="img/instagram.svg" alt="icon: instagram" />
+              <a href="https://instagram.com" target="_blank" class="footer__link">
+                <img src="img/instagram.svg" alt="icon: instagram" />
               </a>
             </div>
             <!-- /.footer__social-links -->
@@ -469,9 +471,16 @@
                     alt="icon: phone call"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__item-phones">
+                  <span>Tel (business hours) :</span>
+                  <a href="tel:269 1500">269 1500</a><br />
+                  <span>Tel (hotline) Monday - Saturday:</span>
+                  <a href="tel:52-56-61-38">52-56-61-38</a>
+                  <span>(08:00 am – 20:00 pm)</span><br />
+                  <span>Tel (hotline) Sunday:</span>
+                  <a href="tel:52-56-61-38">52-56-61-38</a>
+                  <span>(08:00 am – 14:00 pm)</span>
+                </div>
               </li>
               <li class="footer__item footer__item--mb">
                 <div class="footer__icon-wrapper">
@@ -495,14 +504,16 @@
             </form>
           </div>
           <!-- /.footer__contact-form -->
-          <div class="footer__disclaimer">
-            <span class="footer__disclaimer-text">
-              Disclaimer&nbsp;&nbsp;&nbsp;Conditions of use&nbsp;&nbsp;&nbsp;Cancellation policy
-            </span>
-            <img src="img/images.png" alt="icons: images" class="footer__disclaimer-images" />
-          </div>
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__disclaimer">
+          <div class="footer__disclaimer-text">
+            <a href="#">Disclaimer</a>
+            <a href="#">Conditions of use</a>
+            <a href="#">Cancellation policy</a>
+          </div>
+          <img src="img/images.png" alt="icons: images" class="footer__disclaimer-images" />
+        </div>
       </div>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
