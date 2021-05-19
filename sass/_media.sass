@@ -1,3 +1,5 @@
+.packages
+  // display: none
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -184,6 +186,8 @@
       right: 0
       bottom: 0
       padding-top: 10px
+      max-height: 100vh
+      overflow-y: auto
       &__visible
         display: block
     &-menu
@@ -197,9 +201,6 @@
         margin-bottom: 29px
       &__search
         margin-bottom: 36px
-      &__scroll
-        max-height: 100vh
-        overflow-y: auto
     &__user
       &-mobile
         &-visible
@@ -449,7 +450,7 @@
       line-height: 160%
       &--mb
         margin-left: 0
-        margin-right: 10px
+        // margin-right: 10px
         margin-bottom: 22px
     &__icon
       &-wrapper
@@ -487,6 +488,7 @@
     &__disclaimer
       grid-column: 1
       &-text
+        max-width: 276px
         width: 100%
       &-images
         margin-top: 10px
