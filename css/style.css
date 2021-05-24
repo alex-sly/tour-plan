@@ -1753,14 +1753,14 @@ img {
 .modal__dialog {
   max-width: 478px;
   position: fixed;
-  top: 50%;
+  top: 51%;
   left: 50%;
   color: #fff;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 8px;
-  padding: 33px 88px;
+  padding: 17px 88px 33px 88px;
   z-index: 101;
   visibility: hidden;
   opacity: 0;
@@ -2036,7 +2036,7 @@ img {
   }
   .modal__dialog {
     width: 60%;
-    padding: 25px 70px;
+    padding: 17px 70px 30px 70px;
   }
 }
 
@@ -2331,7 +2331,7 @@ img {
   }
   .modal__dialog {
     width: 70%;
-    padding: 20px 50px;
+    padding: 17px 50px 30px 50px;
   }
 }
 
@@ -2542,14 +2542,17 @@ img {
   }
   .modal__dialog {
     width: 80%;
-    padding: 20px 35px;
+    padding: 15px 35px 25px 35px;
   }
   .modal__button {
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .modal__info {
     width: 100%;
-    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -2572,7 +2575,7 @@ img {
   }
   .modal__dialog {
     width: 90%;
-    padding: 20px 20px;
+    padding: 15px 20px 20px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
