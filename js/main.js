@@ -41,6 +41,7 @@ $(document).ready(function () {
   });
 
   function openModal() {
+    formClear();
     // console.log($(this).attr("data-href"));
     // const modalOverlay = $(".modal__overlay");
     // const modalDialog = $(".modal__dialog");
@@ -80,7 +81,7 @@ $(document).ready(function () {
     });
   });
   // Номер телефона
-  $(".phone").mask("+7 (999) 999-99-99");
+  $(".phone").mask("+7 (999) 999-99-99", { clearIfNotMatch: true });
 
   // Очистка форм
   function formClear() {

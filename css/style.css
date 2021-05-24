@@ -2572,8 +2572,8 @@ img {
     margin-top: 10px;
   }
   .modal__dialog {
-    width: 80%;
-    padding: 15px 35px 25px 35px;
+    width: 90%;
+    padding: 15px 25px 25px 25px;
   }
   .modal__button {
     width: 100%;
