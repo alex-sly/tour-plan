@@ -26,7 +26,7 @@ $(document).ready(function () {
   // Мобильное меню
   const menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
-    console.log("CLICK");
+    // console.log("CLICK");
     document.querySelector(".navbar-button").classList.toggle("navbar-button__visible");
   });
 
@@ -57,4 +57,39 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  // Обработка форм
+  $(".forma").each(function () {
+    $(this).validate({
+      // errorElement: "div",
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "* Please specify your name",
+          minlength: "* Name must be at least 2 letters",
+        },
+        email: {
+          required: "* Please specify your email address",
+          email: "* Email format: name@domain.com",
+        },
+        phone: {
+          required: "* Phone number required",
+          minlength: "* Phone number must be 11 digits",
+        },
+      },
+    });
+  });
+  // Номер телефона
+  $(".phone").mask("+7 (999) 999-99-99");
+
+  // Очистка форм
+  function formClear() {
+    console.log("FORM CLEAR");
+    $('form input[type="text"]').val("");
+    $('form input[type="phone"]').val("");
+    $('form input[type="email"]').val("");
+    $("form textarea").val("");
+  }
+
+  formClear();
 });
