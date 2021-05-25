@@ -94,6 +94,8 @@ $(document).ready(function () {
     $('form input[type="email"]').val("");
     $("form textarea").val("");
   }
-
   formClear();
+
+  // Анамация
+  AOS.init();
 });

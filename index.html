@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar-mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="flip-left" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
 
@@ -221,7 +223,7 @@
         <h2 class="packages__header">Other Packages</h2>
         <div class="packages-wrapper">
           <!-- offer-1 -->
-          <div class="offer">
+          <div class="offer" data-aos="zoom-in" data-aos-delay="100">
             <div class="offer-picture">
               <img
                 class="offer-picture__image-first"
@@ -272,7 +274,7 @@
             </div>
           </div>
           <!-- /.offer-1 -->
-          <div class="offer">
+          <div class="offer" data-aos="flip-left" data-aos-delay="200">
             <div class="offer-picture">
               <img
                 class="offer-picture__image"
@@ -308,7 +310,7 @@
             </div>
           </div>
           <!-- /.offer-2 -->
-          <div class="offer">
+          <div class="offer" data-aos="flip-left" data-aos-delay="300">
             <div class="offer-picture">
               <img class="offer-picture__image" src="img/picture-3.jpg" alt="Hotel: White Palace" />
             </div>
@@ -340,7 +342,7 @@
             </div>
           </div>
           <!-- /.offer-3 -->
-          <div class="offer">
+          <div class="offer" data-aos="flip-left" data-aos-delay="400">
             <div class="offer-picture">
               <img class="offer-picture__image" src="img/picture-4.jpg" alt="Hotel: Luxury Place" />
             </div>
@@ -372,7 +374,7 @@
             </div>
           </div>
           <!-- /.offer-4 -->
-          <div class="offer">
+          <div class="offer" data-aos="flip-left" data-aos-delay="500">
             <div class="offer-picture">
               <img
                 class="offer-picture__image"
@@ -447,7 +449,7 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
+                <div class="reviews-slider__profile" data-aos="flip-left" data-aos-delay="100">
                   <img
                     src="img/reviews-avatar1.jpg"
                     alt="Photo: Megan Fox"
@@ -557,7 +559,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -568,16 +570,16 @@
               Book Now
             </button>
           </div>
-          <!-- /.card -->
-          <div class="card activities__card">
+          <!-- /.card-1 -->
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button data-toggle="modal" data-href="#booking-modal" class="card__button">
               Book Now
             </button>
           </div>
-          <!-- /.card -->
-          <div class="card activities__card">
+          <!-- /.card-2 -->
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -588,8 +590,8 @@
               Book Now
             </button>
           </div>
-          <!-- /.card -->
-          <div class="card activities__card">
+          <!-- /.card-3 -->
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -600,7 +602,7 @@
               Book Now
             </button>
           </div>
-          <!-- /.card -->
+          <!-- /.card-4 -->
         </div>
         <!-- /.activities-wrapper -->
       </div>
@@ -610,7 +612,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="#" class="footer__logo" data-aos="flip-left" data-aos-delay="100">
             <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
           <div class="footer__list footer__categories">
@@ -816,6 +818,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
