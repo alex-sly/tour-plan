@@ -429,6 +429,50 @@ img[alt="www.000webhost.com"] {
   cursor: pointer;
 }
 
+.button:hover {
+  -webkit-animation: onButton 0.5s;
+          animation: onButton 0.5s;
+}
+
+@-webkit-keyframes onButton {
+  0% {
+    background-color: tomato;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    background-color: #EC1F46;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes onButton {
+  0% {
+    background-color: tomato;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    background-color: #EC1F46;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.linkhover:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px;
+}
+
 .invalid {
   color: tomato;
 }
@@ -2068,6 +2112,14 @@ img[alt="www.000webhost.com"] {
   .modal__dialog {
     width: 60%;
     padding: 17px 70px 30px 70px;
+  }
+  .button:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .linkhover:hover {
+    text-decoration: none;
+    text-shadow: none;
   }
 }
 

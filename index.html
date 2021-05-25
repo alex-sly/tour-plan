@@ -32,7 +32,7 @@
 
           <a href="#" class="user navbar__user navbar__user-mobile-hidden">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
-            <span class="user__name">Nathan</span>
+            <span class="linkhover user__name">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -44,6 +44,7 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container -->
+      <!-- Mobile menu -->
       <div class="navbar-button">
         <div class="container">
           <ul class="navbar-menu">
@@ -62,25 +63,25 @@
               </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+              <a href="#" class="linkhover navbar-menu__link">All Deals</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
+              <a href="#" class="linkhover navbar-menu__link">Hotels</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="#" class="linkhover navbar-menu__link">Activities</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a href="#" class="linkhover navbar-menu__link">Hotel Day Packages</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a href="#" class="linkhover navbar-menu__link">Restaurants</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
+              <a href="#" class="linkhover navbar-menu__link">Events</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a href="#" class="linkhover navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
           <!-- /.navbar-menu -->
@@ -267,7 +268,11 @@
               <div class="offer-hotel__block">
                 <span class="offer-hotel__old-price">$ 10,500</span>
                 <strong class="offer-hotel__price">$ 8,500</strong>
-                <button data-toggle="modal" data-href="#booking-modal" class="offer-hotel__button">
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button offer-hotel__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -303,7 +308,11 @@
               <div class="offer-hotel__block">
                 <span class="offer-hotel__old-price">$ 8,500</span>
                 <strong class="offer-hotel__price">$ 3,000</strong>
-                <button data-toggle="modal" data-href="#booking-modal" class="offer-hotel__button">
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button offer-hotel__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -335,7 +344,11 @@
               <div class="offer-hotel__block">
                 <span class="offer-hotel__old-price">$ 10,500</span>
                 <strong class="offer-hotel__price">$ 9,500</strong>
-                <button data-toggle="modal" data-href="#booking-modal" class="offer-hotel__button">
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button offer-hotel__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -367,7 +380,11 @@
               <div class="offer-hotel__block">
                 <span class="offer-hotel__old-price">$ 4,500</span>
                 <strong class="offer-hotel__price">$ 2,500</strong>
-                <button data-toggle="modal" data-href="#booking-modal" class="offer-hotel__button">
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button offer-hotel__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -403,7 +420,11 @@
               <div class="offer-hotel__block">
                 <span class="offer-hotel__old-price">$ 6,500</span>
                 <strong class="offer-hotel__price">$ 3,500</strong>
-                <button data-toggle="modal" data-href="#booking-modal" class="offer-hotel__button">
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button offer-hotel__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -482,7 +503,7 @@
             <!-- /.reviews-slide -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
+                <div class="reviews-slider__profile" data-aos="flip-left" data-aos-delay="100">
                   <img
                     src="img/reviews-avatar2.jpg"
                     alt="Photo: Samantha Green"
@@ -515,7 +536,7 @@
             <!-- /.reviews-slide -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
+                <div class="reviews-slider__profile" data-aos="flip-left" data-aos-delay="100">
                   <img
                     src="img/reviews-avatar3.jpg"
                     alt="Photo: John Lynch"
@@ -566,7 +587,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button data-toggle="modal" data-href="#booking-modal" class="card__button">
+            <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
               Book Now
             </button>
           </div>
@@ -574,7 +595,7 @@
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button data-toggle="modal" data-href="#booking-modal" class="card__button">
+            <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
               Book Now
             </button>
           </div>
@@ -586,7 +607,7 @@
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-            <button data-toggle="modal" data-href="#booking-modal" class="card__button">
+            <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
               Book Now
             </button>
           </div>
@@ -598,7 +619,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button data-toggle="modal" data-href="#booking-modal" class="card__button">
+            <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
               Book Now
             </button>
           </div>
@@ -618,31 +639,43 @@
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotel Day Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Restaurants</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Fitness</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">All Deals</a></li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">Hotels</a></li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Activities</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Spa Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Hotel Day Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Restaurants</a>
+              </li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">Fitness</a></li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">Rodrigues</a></li>
             </ul>
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">About Us</a></li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+                <a href="#" class="linkhover footer__link">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a href="#" class="linkhover footer__link">How does it work?</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Promote your Business on BTP</a>
+                <a href="#" class="linkhover footer__link">Frequently Asked Questions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Deals.mu loyalty program</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Promote your Business on BTP</a>
               </li>
             </ul>
           </div>
@@ -666,10 +699,16 @@
           <div class="footer__list footer__legal">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Terms & Conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="linkhover footer__link">Cancellation policy</a>
+              </li>
+              <li class="footer__item"><a href="#" class="linkhover footer__link">Privacy</a></li>
             </ul>
           </div>
           <!-- /.footer__list -->

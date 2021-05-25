@@ -97,5 +97,10 @@ $(document).ready(function () {
   formClear();
 
   // Анамация
-  AOS.init();
+  AOS.init({
+    disable: "mobile",
+    // function() {
+    // let maxWidth = 992;
+    // return window.innerWidth <= maxWidth;
+  });
 });
