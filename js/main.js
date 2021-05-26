@@ -88,7 +88,7 @@ $(document).ready(function () {
 
   // Очистка форм
   function formClear() {
-    console.log("FORM CLEAR");
+    // console.log("FORM CLEAR");
     $('form input[type="text"]').val("");
     $('form input[type="phone"]').val("");
     $('form input[type="email"]').val("");

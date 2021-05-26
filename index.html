@@ -32,8 +32,8 @@
           </a>
           <form action="#" class="search navbar__search navbar__search-mobile-hidden">
             <input type="text" class="search__input" placeholder="Search Location" />
-            <button class="search__button">
-              <img src="img/search.svg" class="seachhover" alt="Icon: search" />
+            <button class="seachhover search__button">
+              <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
           <a href="#" class="user navbar__user navbar__user-mobile-hidden">
@@ -171,7 +171,7 @@
           </div>
           <!-- /.slider -->
           <div class="hotel-right">
-            <div class="booking hotel__booking">
+            <div class="booking hotel__booking" data-aos="flip-left" data-aos-delay="100">
               <div class="booking__info">
                 <div class="booking-price">
                   <span class="booking-price__start">price starts as</span>
@@ -256,7 +256,7 @@
                   magna mollit. Ipsum est fugiat velit ea ullamco do
                 </p>
               </div>
-              <div class="offer-hotel__info">
+              <div class="offer-hotel__info offer-hotel__info-first">
                 <div class="offer-hotel__text">
                   <img src="img/map-pin.svg" alt="Icon: map-pin" />
                   <span class="offer-hotel__note">1749 Wheeler Ridge Delaware</span>
@@ -271,7 +271,7 @@
                 </div>
               </div>
               <!-- /.offer-hotel__info -->
-              <div class="offer-hotel__block">
+              <div class="offer-hotel__block offer-hotel__block-first">
                 <span class="offer-hotel__old-price">$ 10,500</span>
                 <strong class="offer-hotel__price">$ 8,500</strong>
                 <button
@@ -442,7 +442,6 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.packages -->
     <!-- ./Other Packages -->
 
     <section class="newsletter">
@@ -461,7 +460,7 @@
               required
             />
           </div>
-          <button class="linkhover subscribe__button">Send</button>
+          <button class="seachhover subscribe__button">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -753,7 +752,7 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="icon: email" />
                 </div>
-                <a class="footer__item-email" href="mailto:cherly.lawson@example.com">
+                <a class="linkhover footer__item-email" href="mailto:cherly.lawson@example.com">
                   cherly.lawson@example.com
                 </a>
               </li>
@@ -799,9 +798,9 @@
         <!-- /.footer-wrapper -->
         <div class="footer__disclaimer">
           <div class="footer__disclaimer-text">
-            <a href="#">Disclaimer</a>
-            <a href="#">Conditions of use</a>
-            <a href="#">Cancellation policy</a>
+            <a href="#" class="linkhover">Disclaimer</a>
+            <a href="#" class="linkhover">Conditions of use</a>
+            <a href="#" class="linkhover">Cancellation policy</a>
           </div>
           <img src="img/images.png" alt="icons: images" class="footer__disclaimer-images" />
         </div>

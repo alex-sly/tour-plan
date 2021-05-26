@@ -151,6 +151,7 @@
     &__dialog
       width: 60%
       padding: 17px 70px 30px 70px
+@media (max-width: 991px)
   .button
     &:hover
       animation: none
@@ -158,6 +159,12 @@
     &:hover
       text-decoration: none
       text-shadow: none
+  .seachhover
+    &:hover
+      background-color: $primary
+  .sochover
+    &:hover
+      border: none
 @media (max-width: 768px)
   .reviews
     &-slider
@@ -406,7 +413,6 @@
     &__input
       &-group
         width: 100%
-        padding-left: 20px
   .reviews
     padding-bottom: 50px
     &__title
