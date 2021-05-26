@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+    <link rel="preload" as="image" href="img/slide1.jpg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -14,22 +15,27 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/jquery.mask.min.js" defer></script>
+    <script src="js/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="navbar navbar-mobile-fixed">
       <div class="container">
+        <!-- Desktop menu -->
         <div class="navbar-top">
           <a href="#" class="logo" data-aos="flip-left" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
-
           <form action="#" class="search navbar__search navbar__search-mobile-hidden">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
+              <img src="img/search.svg" class="seachhover" alt="Icon: search" />
             </button>
           </form>
-
           <a href="#" class="user navbar__user navbar__user-mobile-hidden">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="linkhover user__name">Nathan</span>
@@ -455,7 +461,7 @@
               required
             />
           </div>
-          <button class="subscribe__button">Send</button>
+          <button class="linkhover subscribe__button">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -684,13 +690,13 @@
             <div class="footer__title footer__title--inline">Social Network</div>
             <div class="footer__social-links">
               <a href="https://facebook.com" target="_blank" class="footer__link">
-                <img src="img/facebook.svg" alt="icon: facebook" />
+                <img src="img/facebook.svg" class="sochover" alt="icon: facebook" />
               </a>
               <a href="https://youtube.com" target="_blank" class="footer__link">
-                <img src="img/youtube.svg" alt="icon: youtube" />
+                <img src="img/youtube.svg" class="sochover" alt="icon: youtube" />
               </a>
               <a href="https://instagram.com" target="_blank" class="footer__link">
-                <img src="img/instagram.svg" alt="icon: instagram" />
+                <img src="img/instagram.svg" class="sochover" alt="icon: instagram" />
               </a>
             </div>
             <!-- /.footer__social-links -->
@@ -734,12 +740,12 @@
                 </div>
                 <div class="footer__item-phones">
                   <span>Tel (business hours) :</span>
-                  <a href="tel:269 1500">269 1500</a><br />
+                  <a href="tel:269 1500" class="linkhover">269 1500</a><br />
                   <span>Tel (hotline) Monday - Saturday:</span>
-                  <a href="tel:52-56-61-38">52-56-61-38</a>
+                  <a href="tel:52-56-61-38" class="linkhover">52-56-61-38</a>
                   <span>(08:00 am – 20:00 pm)</span><br />
                   <span>Tel (hotline) Sunday:</span>
-                  <a href="tel:52-56-61-38">52-56-61-38</a>
+                  <a href="tel:52-56-61-38" class="linkhover">52-56-61-38</a>
                   <span>(08:00 am – 14:00 pm)</span>
                 </div>
               </li>
@@ -853,11 +859,5 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
